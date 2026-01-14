@@ -300,6 +300,7 @@ userstyles:
   duolingo:
     name: Duolingo
     categories: [education]
+    icon: duolingo
     color: green
     readme:
       app-link: "https://duolingo.com"

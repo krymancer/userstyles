@@ -70,25 +70,13 @@
       }
     }
 
-    /* Start styling your website here: */
-    background-color: @base;
-
-    /* If you need to specify an overwrite specific to a flavor
-    *  (e.g. only when the flavor is set to latte), you can use a `when` guard clause. */
-    & when (@lookup = latte) {
-      /* ... */
-    }
-    /* You can also negate the statement above by using
-    *  a `when not` guard clause. */
-    & when not (@lookup = latte) {
-      /* ... */
-    }
-
+    /* Duolingo lesson banner images brightness adjustment */
     ._3HqVu,
     .uGhFr {
       filter: brightness(@brightness);
     }
 
+    /* Text color for lesson content and UI elements */
     .ydKok,
     .Ni_YG {
       color: @text;
@@ -105,7 +93,7 @@
       --color-hare: #rgbify(@surface2) [];
       --color-hare-always-light: #rgbify(@subtext0) [];
       --color-wolf: #rgbify(@text) [];
-      --color-eel: #rgbify(@rosewater) [];
+      --color-eel: #rgbify(@text) [];
       --color-squid: #rgbify(@rosewater) [];
       --color-walking-fish: #rgbify(@base) [];
       --color-flamingo: #rgbify(@surface2) [];
@@ -128,18 +116,18 @@
       --color-turtle: #rgbify(@surface1) [];
       --color-owl: #rgbify(@green) [];
       --color-tree-frog: #rgbify(@overlay0) [];
-      --color-peacock: #rgbify(@sapphire) [];
+      --color-peacock: #rgbify(@accent-color) [];
       --color-iguana: #rgbify(@base) [];
       --color-anchovy: #rgbify(@text) [];
       --color-beluga: #rgbify(@text) [];
       --color-moon-jelly: #rgbify(@sky) [];
       --color-blue-jay: #rgbify(@overlay0) [];
-      --color-macaw: #rgbify(@sapphire) [];
-      --color-whale: #rgbify(@sapphire) [];
+      --color-macaw: #rgbify(@accent-color) [];
+      --color-whale: #rgbify(@accent-color) [];
       --color-humpback: #rgbify(@overlay0) [];
       --color-narwhal: #rgbify(@surface2) [];
       --color-manta-ray: #rgbify(@surface0) [];
-      --color-starfish: #rgbify(@red) [];
+      --color-starfish: #rgbify(@pink) [];
       --color-beetle: #rgbify(@mauve) [];
       --color-betta: #rgbify(@overlay2) [];
       --color-butterfly: #rgbify(@overlay0) [];
@@ -156,19 +144,19 @@
       --color-nebula: #rgbify(@overlay0) [];
       --color-nova: #rgbify(@red) [];
       --color-gamma: #rgbify(@green) [];
-      --color-starlight: #rgbify(@sapphire) [];
+      --color-starlight: #rgbify(@accent-color) [];
       --color-quasar: #rgbify(@mauve) [];
       --color-celestia: #rgbify(@rosewater) [];
       --color-eclipse: #rgbify(@crust) [];
       --color-black: #rgbify(@crust) [];
       --color-aqua: #rgbify(@overlay1) [];
-      --color-aqua-always-light: #rgbify(@sapphire) [];
-      --color-ocean: #rgbify(@sapphire) [];
+      --color-aqua-always-light: #rgbify(@accent-color) [];
+      --color-ocean: #rgbify(@accent-color) [];
       --color-seafoam: #rgbify(@surface1) [];
       --color-ice: #rgbify(@base) [];
-      --color-max-shadow: #rgbify(@sapphire) [];
+      --color-max-shadow: #rgbify(@accent-color) [];
       --color-black-white: #rgbify(@rosewater) [];
-      --color-diamond-stat: #rgbify(@sapphire) [];
+      --color-diamond-stat: #rgbify(@accent-color) [];
       --color-mask-green: #rgbify(@green) [];
       --color-pearl-stat: #rgbify(@pink) [];
       --color-snow-dark-swan: #rgbify(@surface1) [];
@@ -180,7 +168,7 @@
       --color-gray-text: #rgbify(@text) [];
       --color-orange: #rgbify(@peach) [];
       --color-diamond-highlight: #rgbify(@rosewater) [];
-      --color-diamond: #rgbify(@sapphire) [];
+      --color-diamond: #rgbify(@accent-color) [];
       --color-banana: #rgbify(@peach) [];
       --color-cloud: #rgbify(@subtext1) [];
       --color-cloud-light: #rgbify(@rosewater) [];
@@ -190,8 +178,8 @@
       --color-kiwi-light: #rgbify(@green) [];
       --color-facebook: #rgbify(@surface2) [];
       --color-facebook-dark: #rgbify(@surface1) [];
-      --color-google: #rgbify(@sapphire) [];
-      --color-twitter: #rgbify(@sapphire) [];
+      --color-google: #rgbify(@accent-color) [];
+      --color-twitter: #rgbify(@accent-color) [];
       --color-hv-light-peach: #rgbify(@yellow) [];
       --color-hv-peach: #rgbify(@peach) [];
       --color-hv-light-orange: #rgbify(@peach) [];
@@ -199,7 +187,7 @@
       --color-hv-brown: #rgbify(@surface1) [];
       --color-streak-panel-extended-background: #rgbify(@peach) [];
       --color-streak-panel-frozen-background: #rgbify(@overlay0) [];
-      --color-streak-panel-frozen-flair-background: #rgbify(@sapphire) [];
+      --color-streak-panel-frozen-flair-background: #rgbify(@accent-color) [];
       --color-streak-panel-frozen-subtitle: #rgbify(@rosewater) [];
       --color-streak-panel-frozen-text: #rgbify(@rosewater) [];
       --color-streak-panel-frozen-topbar-text: #rgbify(@rosewater) [];
@@ -223,7 +211,7 @@
       --color-grizzly-lite: #rgbify(@peach) [];
       --color-guinea-pig-always-light: #rgbify(@peach) [];
       --color-iguana-always-light: #rgbify(@text) [];
-      --color-macaw-always-light: #rgbify(@sapphire) [];
+      --color-macaw-always-light: #rgbify(@accent-color) [];
       --color-owl-always-light: #rgbify(@green) [];
       --color-polar-always-light: #rgbify(@rosewater) [];
       --color-sea-sponge-always-light: #rgbify(@yellow) [];
@@ -234,7 +222,7 @@
       --color-cardinal-always-dark: #rgbify(@red) [];
       --color-eel-always-dark: #rgbify(@rosewater) [];
       --color-hare-always-dark: #rgbify(@surface2) [];
-      --color-macaw-always-dark: #rgbify(@sapphire) [];
+      --color-macaw-always-dark: #rgbify(@accent-color) [];
       --color-owl-always-dark: #rgbify(@green) [];
       --color-polar-always-dark: #rgbify(@base) [];
       --color-wolf-always-dark: #rgbify(@text) [];
@@ -247,7 +235,7 @@
       --color-daredevil: #rgbify(@surface2) [];
       --color-navigator: #rgbify(@surface0) [];
       --color-champion: #rgbify(@peach) [];
-      --color-daily_refresh: #rgbify(@sapphire) [];
+      --color-daily_refresh: #rgbify(@accent-color) [];
       --color-dark-mode-locked-path-section-text-color: #rgbify(@surface2) [];
       --color-rookie-progress-bar: #rgbify(@overlay0) [];
       --color-explorer-progress-bar: #rgbify(@red) [];
@@ -258,10 +246,10 @@
       --color-daredevil-progress-bar: #rgbify(@surface2) [];
       --color-navigator-progress-bar: #rgbify(@surface1) [];
       --color-champion-progress-bar: #rgbify(@peach) [];
-      --color-daily_refresh-progress-bar: #rgbify(@sapphire) [];
+      --color-daily_refresh-progress-bar: #rgbify(@accent-color) [];
       --color-course-complete-cta: #rgbify(@sky) [];
-      --color-course-complete-cta-border: #rgbify(@sapphire) [];
-      --color-bea-secondary: #rgbify(@sapphire) [];
+      --color-course-complete-cta-border: #rgbify(@accent-color) [];
+      --color-bea-secondary: #rgbify(@accent-color) [];
       --color-eddy-secondary: #rgbify(@red) [];
       --color-gilded-secondary: #rgbify(@peach) [];
       --color-lily-secondary: #rgbify(@overlay2) [];
@@ -278,13 +266,13 @@
       --color-vikram-radio: #rgbify(@surface2) [];
       --color-zari-radio: #rgbify(@overlay1) [];
       --color-oscar-radio: #rgbify(@surface1) [];
-      --color-bea-junior-shine: #rgbify(@sapphire) [];
+      --color-bea-junior-shine: #rgbify(@accent-color) [];
       --color-duo-shine: #rgbify(@green) [];
       --color-eddy-shine: #rgbify(@red) [];
       --color-falstaff-shine: #rgbify(@peach) [];
       --color-lily-shine: #rgbify(@mauve) [];
       --color-lin-lucy-shine: #rgbify(@peach) [];
-      --color-oscar-shine: #rgbify(@sapphire) [];
+      --color-oscar-shine: #rgbify(@accent-color) [];
       --color-vikram-shine: #rgbify(@red) [];
       --color-zari-shine: #rgbify(@pink) [];
       --color-super-background-secondary: #rgbify(@base) [];
@@ -296,7 +284,7 @@
       --color-legendary-dark-background: #rgbify(@crust) [];
       --color-roseate: #rgbify(@red) [];
       --color-rosefinch: #rgbify(@surface2) [];
-      --color-bluebird: #rgbify(@sapphire) [];
+      --color-bluebird: #rgbify(@accent-color) [];
       --color-cotinga: #rgbify(@overlay1) [];
       --color-sabrewing: #rgbify(@mauve) [];
       --color-blueberry: #rgbify(@surface2) [];
@@ -310,7 +298,7 @@
       --color-yir-page4-shadow: #rgbify(@sky) [];
       --color-yir-page5-shadow: #rgbify(@peach) [];
       --color-super-gradient-green-variant1: #rgbify(@green) [];
-      --color-super-gradient-blue-variant1: #rgbify(@sapphire) [];
+      --color-super-gradient-blue-variant1: #rgbify(@accent-color) [];
       --color-super-gradient-pink-variant1: #rgbify(@mauve) [];
       --color-super-gradient-purple-variant1: #rgbify(@surface1) [];
       --color-unknown-001e2d: #rgbify(@mantle) [];
@@ -318,12 +306,11 @@
       --color-unknown-0087d0: #rgbify(@overlay0) [];
       --color-unknown-00aff9: #rgbify(@sapphire) [];
       --color-unknown-013047: #rgbify(@base) [];
-      --color-unknown-048fd1: #rgbify(@sapphire) [];
-      --color-unknown-0e0f10: #rgbify(@crust) [];
+      --color-unknown-048fd1: #rgbify(@accent-color) [];
       --color-unknown-0e3d79: #rgbify(@surface1) [];
       --color-unknown-172071: #rgbify(@surface0) [];
       --color-unknown-280378: #rgbify(@surface0) [];
-      --color-unknown-3ebbf6: #rgbify(@sapphire) [];
+      --color-unknown-3ebbf6: #rgbify(@accent-color) [];
       --color-unknown-655ebb: #rgbify(@overlay1) [];
       --color-unknown-696cee: #rgbify(@blue) [];
       --color-unknown-7c0000: #rgbify(@base) [];
