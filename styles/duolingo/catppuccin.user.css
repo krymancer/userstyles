@@ -70,18 +70,6 @@
       }
     }
 
-    /* Duolingo lesson banner images brightness adjustment */
-    ._3HqVu,
-    .uGhFr {
-      filter: brightness(@brightness);
-    }
-
-    /* Text color for lesson content and UI elements */
-    .ydKok,
-    .Ni_YG {
-      color: @text;
-    }
-
     * {
       --color-snow: #rgbify(@base) [];
       --color-snow-always-light: #rgbify(@base) [];
@@ -147,7 +135,7 @@
       --color-starlight: #rgbify(@accent-color) [];
       --color-quasar: #rgbify(@mauve) [];
       --color-celestia: #rgbify(@rosewater) [];
-      --color-eclipse: #rgbify(@crust) [];
+      --color-eclipse: #rgbify(@text) [];
       --color-black: #rgbify(@crust) [];
       --color-aqua: #rgbify(@overlay1) [];
       --color-aqua-always-light: #rgbify(@accent-color) [];
